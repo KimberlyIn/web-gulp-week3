@@ -1,0 +1,88 @@
+$colorA: #AA0601;
+$colorB: white;
+
+
+header {
+  .header-top {
+    height: 108px;
+    padding: 0 50px;
+    line-height: 7;
+    background-color: $colorA;
+    .logo {
+      float: left;
+    }
+    .nav {
+      float: right;
+      li {
+        padding: 0 25px;         
+        a {
+          color: $colorB;
+          transition: 0.2s linear all;
+          &:hover {
+            color: rgb(218, 218, 218);
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background-color: $colorA;
+  .footer-nav {
+    padding-top: 15px;
+    line-height: 5;
+    li {
+        float: left;
+        padding: 0 25px;
+    }
+    .ul-right {
+      float: right;
+      li {
+        padding: 0 15px;
+      }
+    }
+  }
+  .contact-method {
+    h2 {
+      text-align: left;
+      padding-left: 40px;
+      color: $colorB;
+    }
+    i {
+      position: absolute;
+      top: 16px;
+      font-size: 30px;
+      color: $colorB;
+    }
+    li {
+      position: relative;
+      padding-top: 10px;
+    }
+  }
+  a {
+    color: $colorB;
+    transition: 0.2s linear all;
+    &:hover {
+      color: rgb(218, 218, 218);
+    }
+  }
+  hr {
+    margin-top: 20px;
+    color: $colorB;
+  }
+  .copyright {
+    padding: 20px 0;
+    p {
+      float: left;
+      color: $colorB;
+    }
+    ul {
+      float: right;
+      li {
+        float: left;
+        padding: 0 25px;
+      }
+    }
+  }
+}

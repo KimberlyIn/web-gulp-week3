@@ -1,0 +1,186 @@
+$colorA: #AA0601;
+$colorB: #650300;
+
+
+header {
+  .header-bottom {
+    height: 840px;
+    background-image: url(https://images.unsplash.com/photo-1509029032154-54ba8b3216d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80);
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+  }
+  .title { 
+    padding-top: 348px;
+    margin: 0 22%;
+    text-align: right;
+    h2 {
+      font-weight: 700;
+      color: $colorB;
+    }
+    h1 {
+      font-weight: 800;
+      color: $colorB;
+    }
+  }
+}
+.explain {
+  background-color: rgb(250, 237, 237);
+  .container {
+    padding: 50px 0;
+    h2 {
+      text-align: center;
+    }
+    ul {
+      text-align: center;
+      padding: 90px 0;
+    }
+    li {
+      float: left;
+      width: 25%;
+      padding: 0 30px;
+      i {
+        font-size: 90px;
+        color: $colorB;
+      }
+      h6 {
+        font-size: 20px;
+        font-weight: 700;
+        padding: 10px 0;
+      }
+    }
+  }
+}
+.content {
+  .ad {
+    .container {
+      padding: 50px 0;
+    }
+    .title {
+      text-align: center;
+    }
+    ul {
+      display: flex;
+      width: 80%;
+      margin: 50px auto;
+      flex-direction: row;
+      flex-wrap: wrap;
+      .italic {
+        font-weight: 700;
+        font-style: italic;
+        h2 {
+          font-size: 40px;
+          padding: 0 30px;
+        }
+        i {
+          font-size: 28px;
+        }
+      }
+    }
+    li {
+      display: flex;
+      margin: 10px 0;
+      align-items: center;
+      flex-grow: 1;
+    }
+    .item {
+      width:30%;
+    }
+    .item-right {
+      justify-content: flex-end;
+    }
+  }
+  .design {
+    height: 705px;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)), url(https://images.unsplash.com/photo-1582480983712-666335fc86e9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80);
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    .container {
+      padding: 50px 0;
+      ul {
+        width: 94%;
+        margin: 30px auto;
+        h2 {
+          padding-top: 40%;
+          font-size:50px;
+        }
+      }
+      li {
+        float: left;
+        width: 540px;
+        height: 455px;
+        margin: 0 10px;
+      }
+      .item1{
+        filter: hue-rotate(13deg);
+        background-image: linear-gradient(rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.6)), url(https://images.unsplash.com/photo-1509475826633-fed577a2c71b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .item2{
+        filter: hue-rotate(37deg);
+        background-image: linear-gradient(rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.6)), url(https://images.unsplash.com/photo-1486670082170-b54a98edda89?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+
+  }
+  .recommend {
+    padding: 50px 0;
+    ul {
+      width: 93%;
+      margin: 0 auto;
+      padding: 50px 0; 
+      li {
+        position: relative;
+        height: 500px;
+        float: left;
+        width: 23%;
+        margin: 0 11px;
+        box-shadow: 0 0 7px rgba(218, 218, 218, 0.7);
+        img {
+          width: 100%;
+        }
+        .name {
+          padding-bottom: 8px;
+        }
+        .time{
+          position: absolute;
+          padding-bottom: 16px;
+          bottom: 0;
+        }
+        .detail {
+          padding: 16px;
+        }
+      }
+    }
+  }
+}
+.contact {
+  background-color: rgb(250, 237, 237);
+}
+
+.container {
+  h2 {
+    text-align: center;
+    font-weight: 700;
+    color: $colorB;
+  }
+  .white {
+    color: white;
+  }
+  .red {
+    color: $colorA;
+  }
+  h6 {
+    color: $colorB;
+  }
+  i {
+    color: $colorB;
+  }
+  p {
+    color: $colorB;
+  }
+}
