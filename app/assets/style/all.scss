@@ -1,6 +1,9 @@
-@import "setting";
-@import "layout";
-@import "index";
+@import 'helpers/variables';
+@import 'base/reset';
+@import 'layout/grid';
+
+@import 'layout';
+@import 'index'; 
 
 
 

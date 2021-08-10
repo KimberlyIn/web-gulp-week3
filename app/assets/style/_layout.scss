@@ -1,22 +1,45 @@
-$colorA: #AA0601;
-$colorB: white;
-
-
 header {
   .header-top {
     height: 108px;
     padding: 0 50px;
     line-height: 7;
     background-color: $colorA;
+    @include iphone {
+      position: relative;
+      height: 65px;
+      padding: 0;
+    }
     .logo {
       float: left;
+      @include iphone {
+        position: absolute;
+        left: 40%;
+        line-height: 4;
+      }
+      img {
+        @include iphone {
+          width: 80%;
+        }
+      }
     }
     .nav {
       float: right;
+      @include iphone {
+        float: none;
+        padding-top: 66px;
+      }
       li {
-        padding: 0 25px;         
+        padding: 0 25px;
+        @include iphone {
+          float: none;
+          width: 49%;
+          line-height: 3;
+          margin: 1px;
+          text-align: center;
+          background-color: $colorA;
+        }
         a {
-          color: $colorB;
+          color: $colorC;
           transition: 0.2s linear all;
           &:hover {
             color: rgb(218, 218, 218);
@@ -34,12 +57,28 @@ footer {
     line-height: 5;
     li {
         float: left;
-        padding: 0 25px;
+        padding-right: 25px;
+        a {
+          @include pad {
+            font-size: 12px;
+          }
+        }
     }
     .ul-right {
       float: right;
       li {
         padding: 0 15px;
+        i {
+          @include pad {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+    .soshow-media {
+      i {
+        font-size: 35px;
+        color: $colorC;
       }
     }
   }
@@ -47,13 +86,20 @@ footer {
     h2 {
       text-align: left;
       padding-left: 40px;
-      color: $colorB;
+      color: $colorC;
+      @include pad {
+        font-size: 25px;
+        padding-left: 30px;
+      }
     }
     i {
       position: absolute;
       top: 16px;
       font-size: 30px;
-      color: $colorB;
+      color: $colorC;
+      @include pad {
+        font-size: 25px;
+      }
     }
     li {
       position: relative;
@@ -61,7 +107,7 @@ footer {
     }
   }
   a {
-    color: $colorB;
+    color: $colorC;
     transition: 0.2s linear all;
     &:hover {
       color: rgb(218, 218, 218);
@@ -69,20 +115,29 @@ footer {
   }
   hr {
     margin-top: 20px;
-    color: $colorB;
+    color: $colorC;
   }
   .copyright {
     padding: 20px 0;
     p {
       float: left;
-      color: $colorB;
+      color: $colorC;
+      @include pad {
+        font-size: 10px;
+      }
     }
     ul {
       float: right;
       li {
         float: left;
         padding: 0 25px;
+        @include pad {
+          font-size: 12px;
+        }
       }
     }
+  }
+  i {
+    color: $colorC;
   }
 }

@@ -1,7 +1,3 @@
-$colorA: #AA0601;
-$colorB: #650300;
-
-
 header {
   .header-bottom {
     height: 840px;
@@ -9,18 +5,31 @@ header {
     background-size: cover;
     background-position: 50%;
     background-repeat: no-repeat;
+    @include iphone {
+      height: 460px;
+    }
   }
-  .title { 
+  .title {
     padding-top: 348px;
-    margin: 0 22%;
+    margin: 0 20%;
     text-align: right;
+    @include desktop {
+      margin: 0 11%;
+    }
     h2 {
       font-weight: 700;
       color: $colorB;
+      @include pad {
+        font-size: 17px;
+      } 
     }
     h1 {
+      font-size: 4rem;
       font-weight: 800;
       color: $colorB;
+      @include pad { 
+        font-size: 35px; 
+      }
     }
   }
 }
@@ -34,11 +43,18 @@ header {
     ul {
       text-align: center;
       padding: 90px 0;
+      @include pad {
+        padding: 50px 0;
+      }
     }
     li {
       float: left;
       width: 25%;
       padding: 0 30px;
+      @include pad {
+        width: 50%;
+        padding: 30px 60px;
+      } 
       i {
         font-size: 90px;
         color: $colorB;
@@ -59,87 +75,118 @@ header {
     .title {
       text-align: center;
     }
+    h2 {
+      font-size: 40px;
+      @include pad {
+        font-size: 35px;
+      }
+    }
+    i {
+      font-size: 50px;
+      @include pad {
+        font-size: 40px;
+      }
+    }
     ul {
-      display: flex;
-      width: 80%;
+      flex-direction: column;
+      width: 85%;
       margin: 50px auto;
-      flex-direction: row;
-      flex-wrap: wrap;
-      .italic {
-        font-weight: 700;
-        font-style: italic;
-        h2 {
-          font-size: 40px;
-          padding: 0 30px;
-        }
-        i {
-          font-size: 28px;
-        }
+      @include pad {
+        flex-direction: row;
+        flex-wrap: wrap;
       }
     }
     li {
-      display: flex;
-      margin: 10px 0;
-      align-items: center;
-      flex-grow: 1;
+      margin: 15px 0;
+      font-style: italic;
     }
-    .item {
-      width:30%;
+    .item-p-l {
+      padding-left: 20px;
+      @include pad {
+        padding: 0;
+      }
+    }
+    .item-p-r {
+      padding-right: 20px;
+      @include pad {
+        padding: 0;
+      }
+    }
+    .pic {
+      @include pad {
+        width: 60%;
+        margin-right: 20px;
+      }
+    }
+    .div-flex {
+      display: flex;
     }
     .item-right {
-      justify-content: flex-end;
+      flex-direction: row-reverse;
+      @include pad {
+        flex-direction: row;
+      }
+    }
+    .pic-text {
+      align-items: center;
     }
   }
   .design {
-    height: 705px;
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)), url(https://images.unsplash.com/photo-1582480983712-666335fc86e9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80);
     background-size: cover;
     background-position: 50%;
     background-repeat: no-repeat;
     .container {
       padding: 50px 0;
-      ul {
-        width: 94%;
-        margin: 30px auto;
+      .col-6 {
+        float: left;
+        width: 45%;
+        height: 455px;
+        margin: 40px 10px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        @include desktop {
+          width: 45%;
+        } 
+        @include pad {
+          height: 278px;
+          margin: 10px;
+        }
         h2 {
           padding-top: 40%;
           font-size:50px;
         }
       }
-      li {
-        float: left;
-        width: 540px;
-        height: 455px;
-        margin: 0 10px;
-      }
       .item1{
         filter: hue-rotate(13deg);
         background-image: linear-gradient(rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.6)), url(https://images.unsplash.com/photo-1509475826633-fed577a2c71b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80);
-        background-size: cover;
-        background-repeat: no-repeat;
       }
       .item2{
         filter: hue-rotate(37deg);
         background-image: linear-gradient(rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.6)), url(https://images.unsplash.com/photo-1486670082170-b54a98edda89?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
-        background-size: cover;
-        background-repeat: no-repeat;
       }
     }
-
   }
   .recommend {
     padding: 50px 0;
     ul {
       width: 93%;
       margin: 0 auto;
-      padding: 50px 0; 
+      padding: 50px 0;
+      @include desktop {
+        width: 100%;
+      }
       li {
         position: relative;
         height: 500px;
         float: left;
-        width: 23%;
+        width: 22%;
         margin: 0 11px;
         box-shadow: 0 0 7px rgba(218, 218, 218, 0.7);
+        @include pad {
+          width: 46%;
+          margin: 13px;
+        }
         img {
           width: 100%;
         }
@@ -157,16 +204,54 @@ header {
       }
     }
   }
+  
 }
 .contact {
+  padding: 50px 0;
   background-color: rgb(250, 237, 237);
+  .container {
+    width: 35%;
+    @include desktop {
+      width: 75%;
+    }
+  }
+  .black-h2 {
+    color: black;
+  }
+  .title {
+    padding-bottom: 25px;
+    p {
+      padding-top: 20px; 
+    }
+  }
+  .form-control {
+    background: none;
+    border: 1px solid black;
+    
+    box-shadow: none;
+  }
+  textarea {
+    line-height: 3;
+  }
+  .indexForm-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 13px 115px;
+    border: none;
+    @include desktop {
+      margin-top: 35px;
+    }
+  }
+  .bg-primary {
+    background-color: $colorA !important;
+  }
 }
 
 .container {
   h2 {
     text-align: center;
     font-weight: 700;
-    color: $colorB;
+    color: $colorB; 
   }
   .white {
     color: white;
