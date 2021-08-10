@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>首頁</title>
+  <title>home</title>
   
   <!-- Material Design -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
@@ -37,8 +37,6 @@
     </div>
   </div>
 </header>
-
-
 <div class="explain">
   <div class="container">
     <h2>用專業的心，做專業的事</h2>
@@ -66,40 +64,48 @@
     </ul>
   </div>
 </div>
-
 <div class="content">
   <div class="ad">
     <div class="container">
       <h2 class="title">經典系列鏡框</h2>
-      <ul class="clearfix">
-        <li>
-          <img src="https://picsum.photos/635/320" alt="眼鏡款式圖片">
+      <ul class="div-flex clearfix">
+        <li class="div-flex">
+          <div class="pic">
+            <img src="https://picsum.photos/635/320" alt="眼鏡款式圖片">
+          </div>
+          <div class="pic-text div-flex item-p-l italic">
+            <i class="material-icons red">auto_awesome</i>
+            <h2 class="red">optical</h2>
+          </div>
         </li>
-        <li class="item italic">
-          <h2 class="red"><i class="material-icons red">auto_awesome</i>optical</h2>
+        <li class="div-flex item-right">
+          <div class="pic">
+            <img src="https://picsum.photos/635/320" alt="眼鏡款式圖片">
+          </div>
+          <div class="pic-text div-flex item-p-r italic  red">
+            <i class="material-icons red">wb_sunny</i>
+            <h2 class="red">sunglasses</h2>
+          </div>
         </li>
-        <li class="item italic item-right red">
-          <h2 class="red"><i class="material-icons red">wb_sunny</i>sunglasses</h2>
-        </li>
-        <li>
-          <img src="https://picsum.photos/635/320" alt="眼鏡款式圖片">
-        </li>
-        <li>
-          <img src="https://picsum.photos/635/320" alt="眼鏡款式圖片">
-        </li>
-        <li class="item italic red">
-          <h2 class="red"><i class="material-icons red">bolt</i>functional</h2>
+        <li class="div-flex">
+          <div class="pic">
+            <img src="https://picsum.photos/635/320" alt="眼鏡款式圖片">
+          </div>
+          <div class="pic-text div-flex item-p-l italic red">
+            <i class="material-icons red">bolt</i>
+            <h2 class="red">functional</h2>
+          </div>
         </li>
       </ul>
     </div>
   </div> 
   <div class="design">
-    <div class="container">
+    <div class="container clearfix">
       <h2 class="white">聯名設計鏡框</h2>
-      <ul class="clearfix">
-        <li class="item1"><h2 class="red">Double A+</h2></li>
-        <li class="item2"><h2 class="red">YOUTH</h2></li>
-      </ul>
+      <div class="design-box clearfix">
+        <div class="col-6 item1"><h2 class="red">Double A+</h2></div>
+        <div class="col-6 item2"><h2 class="red">YOUTH</h2></div>
+      </div> 
     </div>
   </div>
   <div class="container">
@@ -147,16 +153,16 @@
 <div class="contact">
   <div class="container">
     <div class="title">
-      <h2>聯絡我們</h2>
+      <h2 class="black-h2">聯絡我們</h2>
       <p>我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
     </div>
     <div class="mb-4 mb-md-2">
       <label class="mb-1" for="name">姓名</label>
-      <input class="form-control" type="text" name="name" id="name" placeholder="王小明">
+      <input class="form-control" type="text" name="name" id="name" placeholder="張學友">
     </div>
     <div class="mb-4 mb-md-2">
       <label class="mb-1" for="phone">連絡電話</label>
-      <input class="form-control" type="tel" name="phone" id="phone" placeholder="0912-345-678">
+      <input class="form-control" type="tel" name="phone" id="phone" placeholder="0933-123-123">
     </div>
     <div class="mb-4 mb-md-2">
       <label class="mb-1" for="emai">電子郵件</label>
@@ -190,13 +196,19 @@
           <div class="soshow-media">
             <ul class="clearfix">
               <li>
-                <img src="https://picsum.photos/48" alt="icon">
+                <a href="#">
+                  <i class="material-icons">emoji_emotions</i>
+                </a>
               </li>
               <li>
-                <img src="https://picsum.photos/48" alt="icon">
+                <a href="#">
+                  <i class="material-icons">sentiment_satisfied</i>
+                </a>
               </li>
               <li>
-                <img src="https://picsum.photos/48" alt="icon">
+                <a href="#">
+                  <i class="material-icons">sentiment_very_satisfied</i>
+                </a>
               </li>
             </ul>
           </div>
