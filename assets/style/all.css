@@ -106,9 +106,9 @@ header .header-top {
       @media (max-width: 375px) {
         header .header-top .nav li {
           float: none;
-          width: 49%;
+          width: 50%;
           line-height: 3;
-          margin: 1px;
+          outline: 2px solid #fff;
           text-align: center;
           background-color: #AA0601; } }
       header .header-top .nav li a {
@@ -121,9 +121,17 @@ header .header-top {
 
 footer {
   background-color: #AA0601; }
+  @media (max-width: 375px) {
+    footer .container {
+      position: relative;
+      padding: 15px; } }
   footer .footer-nav {
     padding-top: 15px;
     line-height: 5; }
+    @media (max-width: 375px) {
+      footer .footer-nav {
+        position: absolute;
+        right: 0; } }
     footer .footer-nav li {
       float: left;
       padding-right: 25px; }
@@ -132,11 +140,24 @@ footer {
           font-size: 12px; } }
     footer .footer-nav .ul-right {
       float: right; }
+      @media (max-width: 375px) {
+        footer .footer-nav .ul-right {
+          padding: 0;
+          line-height: 1; } }
       footer .footer-nav .ul-right li {
         padding: 0 15px; }
+        @media (max-width: 375px) {
+          footer .footer-nav .ul-right li {
+            padding: 0 10px; } }
         @media (max-width: 768px) {
           footer .footer-nav .ul-right li i {
             font-size: 30px; } }
+        @media (max-width: 375px) {
+          footer .footer-nav .ul-right li i {
+            font-size: 15px; } }
+    @media (max-width: 375px) {
+      footer .footer-nav .display-s {
+        display: none; } }
     footer .footer-nav .soshow-media i {
       font-size: 35px;
       color: white; }
@@ -148,6 +169,11 @@ footer {
       footer .contact-method h2 {
         font-size: 25px;
         padding-left: 30px; } }
+    @media (max-width: 375px) {
+      footer .contact-method h2 {
+        font-size: 15px;
+        font-weight: normal;
+        padding-left: 25px; } }
   footer .contact-method i {
     position: absolute;
     top: 16px;
@@ -156,6 +182,10 @@ footer {
     @media (max-width: 768px) {
       footer .contact-method i {
         font-size: 25px; } }
+    @media (max-width: 375px) {
+      footer .contact-method i {
+        font-size: 15px;
+        top: 11px; } }
   footer .contact-method li {
     position: relative;
     padding-top: 10px; }
@@ -169,22 +199,38 @@ footer {
   footer hr {
     margin-top: 20px;
     color: white; }
+    @media (max-width: 375px) {
+      footer hr {
+        margin: 15px 0; } }
   footer .copyright {
     padding: 20px 0; }
+    @media (max-width: 375px) {
+      footer .copyright {
+        padding: 0; } }
     footer .copyright p {
       float: left;
       color: white; }
       @media (max-width: 768px) {
         footer .copyright p {
           font-size: 10px; } }
+      @media (max-width: 375px) {
+        footer .copyright p {
+          float: none; } }
     footer .copyright ul {
       float: right; }
+      @media (max-width: 375px) {
+        footer .copyright ul {
+          float: none; } }
       footer .copyright ul li {
         float: left;
         padding: 0 25px; }
         @media (max-width: 768px) {
           footer .copyright ul li {
             font-size: 12px; } }
+        @media (max-width: 375px) {
+          footer .copyright ul li {
+            float: none;
+            padding: 3px 0; } }
   footer i {
     color: white; }
 
@@ -205,12 +251,18 @@ header .title {
   @media (max-width: 1280px) {
     header .title {
       margin: 0 11%; } }
+  @media (max-width: 375px) {
+    header .title {
+      padding-top: 260px; } }
   header .title h2 {
     font-weight: 700;
     color: #650300; }
     @media (max-width: 768px) {
       header .title h2 {
         font-size: 17px; } }
+    @media (max-width: 375px) {
+      header .title h2 {
+        font-size: 15px; } }
   header .title h1 {
     font-size: 4rem;
     font-weight: 800;
@@ -218,6 +270,9 @@ header .title {
     @media (max-width: 768px) {
       header .title h1 {
         font-size: 35px; } }
+    @media (max-width: 375px) {
+      header .title h1 {
+        font-size: 27px; } }
 
 .explain {
   background-color: #faeded; }
@@ -231,6 +286,9 @@ header .title {
       @media (max-width: 768px) {
         .explain .container ul {
           padding: 50px 0; } }
+      @media (max-width: 375px) {
+        .explain .container ul {
+          padding: 0; } }
     .explain .container li {
       float: left;
       width: 25%;
@@ -239,6 +297,10 @@ header .title {
         .explain .container li {
           width: 50%;
           padding: 30px 60px; } }
+      @media (max-width: 375px) {
+        .explain .container li {
+          width: 100%;
+          padding: 50px; } }
       .explain .container li i {
         font-size: 90px;
         color: #650300; }
@@ -284,6 +346,13 @@ header .title {
 .content .ad li {
   margin: 15px 0;
   font-style: italic; }
+  @media (max-width: 375px) {
+    .content .ad li {
+      position: relative;
+      margin: 5px 0;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
 
 .content .ad .item-p-l {
   padding-left: 20px; }
@@ -297,10 +366,17 @@ header .title {
     .content .ad .item-p-r {
       padding: 0; } }
 
-@media (max-width: 768px) {
-  .content .ad .pic {
-    width: 60%;
-    margin-right: 20px; } }
+.content .ad .pic {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%); }
+  @media (max-width: 768px) {
+    .content .ad .pic {
+      width: 60%;
+      margin-right: 20px; } }
+  @media (max-width: 375px) {
+    .content .ad .pic {
+      width: 100%;
+      margin-right: 0; } }
 
 .content .ad .div-flex {
   display: -webkit-box;
@@ -323,6 +399,13 @@ header .title {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media (max-width: 375px) {
+    .content .ad .pic-text {
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%); } }
 
 .content .design {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.6))), url(https://images.unsplash.com/photo-1582480983712-666335fc86e9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80);
@@ -347,6 +430,9 @@ header .title {
         .content .design .container .col-6 {
           height: 278px;
           margin: 10px; } }
+      @media (max-width: 375px) {
+        .content .design .container .col-6 {
+          width: 95%; } }
       .content .design .container .col-6 h2 {
         padding-top: 40%;
         font-size: 50px; }
@@ -372,6 +458,9 @@ header .title {
     @media (max-width: 1280px) {
       .content .recommend ul {
         width: 100%; } }
+    @media (max-width: 375px) {
+      .content .recommend ul {
+        padding: 30px 0; } }
     .content .recommend ul li {
       position: relative;
       height: 500px;
@@ -384,6 +473,13 @@ header .title {
         .content .recommend ul li {
           width: 46%;
           margin: 13px; } }
+      @media (max-width: 375px) {
+        .content .recommend ul li {
+          width: 100%;
+          margin-top: 30px;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 0; } }
       .content .recommend ul li img {
         width: 100%; }
       .content .recommend ul li .name {
@@ -403,6 +499,9 @@ header .title {
     @media (max-width: 1280px) {
       .contact .container {
         width: 75%; } }
+    @media (max-width: 375px) {
+      .contact .container {
+        width: 100%; } }
   .contact .black-h2 {
     color: black; }
   .contact .title {
@@ -416,6 +515,16 @@ header .title {
             box-shadow: none; }
   .contact textarea {
     line-height: 3; }
+  @media (max-width: 375px) {
+    .contact .mb-11 {
+      position: relative; } }
+  @media (max-width: 375px) {
+    .contact .mb-11 input {
+      position: absolute;
+      top: 5px; } }
+  @media (max-width: 375px) {
+    .contact .mb-11 label {
+      padding-left: 22px; } }
   .contact .indexForm-btn {
     display: block;
     margin: 0 auto;
