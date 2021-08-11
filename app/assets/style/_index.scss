@@ -16,12 +16,18 @@ header {
     @include desktop {
       margin: 0 11%;
     }
+    @include iphone {
+      padding-top: 260px;
+    }
     h2 {
       font-weight: 700;
       color: $colorB;
       @include pad {
         font-size: 17px;
-      } 
+      }
+      @include iphone {
+        font-size: 15px; 
+      }
     }
     h1 {
       font-size: 4rem;
@@ -29,6 +35,9 @@ header {
       color: $colorB;
       @include pad { 
         font-size: 35px; 
+      }
+      @include iphone {
+        font-size: 27px; 
       }
     }
   }
@@ -46,6 +55,9 @@ header {
       @include pad {
         padding: 50px 0;
       }
+      @include iphone {
+        padding: 0;
+      }
     }
     li {
       float: left;
@@ -54,7 +66,11 @@ header {
       @include pad {
         width: 50%;
         padding: 30px 60px;
-      } 
+      }
+      @include iphone {
+        width: 100%;
+        padding: 50px;
+      }
       i {
         font-size: 90px;
         color: $colorB;
@@ -99,6 +115,11 @@ header {
     li {
       margin: 15px 0;
       font-style: italic;
+      @include iphone {
+        position: relative;
+        margin: 5px 0;
+        justify-content: center;
+      }
     }
     .item-p-l {
       padding-left: 20px;
@@ -113,9 +134,14 @@ header {
       }
     }
     .pic {
+      filter: grayscale(100%);
       @include pad {
         width: 60%;
         margin-right: 20px;
+      }
+      @include iphone {
+        width: 100%;
+        margin-right: 0;
       }
     }
     .div-flex {
@@ -129,6 +155,11 @@ header {
     }
     .pic-text {
       align-items: center;
+      @include iphone {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
     }
   }
   .design {
@@ -151,6 +182,9 @@ header {
         @include pad {
           height: 278px;
           margin: 10px;
+        }
+        @include iphone {
+          width: 95%;
         }
         h2 {
           padding-top: 40%;
@@ -176,6 +210,9 @@ header {
       @include desktop {
         width: 100%;
       }
+      @include iphone {
+        padding: 30px 0;
+      }
       li {
         position: relative;
         height: 500px;
@@ -187,6 +224,14 @@ header {
           width: 46%;
           margin: 13px;
         }
+        @include iphone {
+          width: 100%;
+          margin-top: 30px;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 0;
+        }
+  
         img {
           width: 100%;
         }
@@ -214,6 +259,9 @@ header {
     @include desktop {
       width: 75%;
     }
+    @include iphone {
+      width: 100%;
+    }
   }
   .black-h2 {
     color: black;
@@ -233,6 +281,23 @@ header {
   textarea {
     line-height: 3;
   }
+  .mb-11 {
+    @include iphone {
+      position: relative;
+    }
+    input {
+      @include iphone {
+        position: absolute;
+        top: 5px;
+      }
+    }
+    label {
+      @include iphone {
+        padding-left: 22px;
+      }
+    }
+  }
+  
   .indexForm-btn {
     display: block;
     margin: 0 auto;
