@@ -83,7 +83,7 @@ header .header-top {
   @media (max-width: 375px) {
     header .header-top {
       position: relative;
-      height: 65px;
+      height: auto;
       padding: 0; } }
   header .header-top .logo {
     float: left; }
@@ -555,5 +555,127 @@ header .title {
 
 .container p {
   color: #650300; }
+
+.s-f-top .nav {
+  border-left: 2px solid #e4e4e4; }
+  .s-f-top .nav li {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    border: 2px solid #e4e4e4;
+    border-top: none;
+    border-bottom: none;
+    border-left: none; }
+    .s-f-top .nav li a {
+      padding: 20px; }
+      @media (max-width: 375px) {
+        .s-f-top .nav li a {
+          padding: 0; } }
+      .s-f-top .nav li a:hover {
+        border-bottom: 5px solid #AA0601; }
+      .s-f-top .nav li a:active {
+        border-bottom: 5px solid #AA0601; }
+      .s-f-top .nav li a:focus {
+        border-bottom: 5px solid #AA0601; }
+    @media (max-width: 375px) {
+      .s-f-top .nav li {
+        padding: 10px; } }
+    @media (max-width: 375px) {
+      .s-f-top .nav li h2 {
+        font-size: 15px; } }
+    @media (max-width: 375px) {
+      .s-f-top .nav li h2 i {
+        font-size: 15px; } }
+  .s-f-top .nav .active {
+    border-bottom: 5px solid #AA0601; }
+    .s-f-top .nav .active a:hover {
+      border: none; }
+
+.s-f-top .s-f-top-pic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .s-f-top .s-f-top-pic li {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+
+.celluloidCombi {
+  padding: 50px 0; }
+  .celluloidCombi .container h3 {
+    text-align: center;
+    padding: 10px 0; }
+  .celluloidCombi .container img {
+    display: block; }
+    @media (max-width: 1280px) {
+      .celluloidCombi .container img {
+        width: 100%; } }
+  .celluloidCombi .container li {
+    float: left;
+    margin: 50px 10px; }
+    @media (max-width: 1280px) {
+      .celluloidCombi .container li {
+        width: 47%; } }
+    @media (max-width: 375px) {
+      .celluloidCombi .container li {
+        width: 100%;
+        margin: 50px 0; } }
+    .celluloidCombi .container li .type {
+      float: left;
+      font-size: 20px;
+      font-weight: 600; }
+    .celluloidCombi .container li .price {
+      text-align: right;
+      font-size: 20px;
+      font-weight: 600;
+      color: #AA0601; }
+    .celluloidCombi .container li .color-box ul {
+      padding: 0; }
+    .celluloidCombi .container li .color-box li {
+      float: none;
+      display: inline;
+      margin-left: 0;
+      padding: 0 9px;
+      border-radius: 15%; }
+      @media (max-width: 375px) {
+        .celluloidCombi .container li .color-box li {
+          margin-right: 5px; } }
+    .celluloidCombi .container li .color-box .brown {
+      background-color: #5F3E2D; }
+    .celluloidCombi .container li .color-box .orange {
+      background-color: #B75929; }
+
+.number-of-pages {
+  position: relative;
+  padding: 50px 0; }
+  .number-of-pages .container {
+    width: 310px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+    .number-of-pages .container ul {
+      border-left: 1px solid #929292; }
+    .number-of-pages .container li {
+      float: left;
+      border: 1px solid #929292;
+      border-left: none; }
+      .number-of-pages .container li a {
+        padding: 5px 10px;
+        color: #555555;
+        -webkit-transition: 0.2s linear all;
+        -o-transition: 0.2s linear all;
+        transition: 0.2s linear all; }
+        .number-of-pages .container li a:hover {
+          background-color: #F2F2F2; }
+        .number-of-pages .container li a:active {
+          color: white;
+          background-color: black; }
+        .number-of-pages .container li a:focus {
+          color: white;
+          background-color: black; }
 
 /*# sourceMappingURL=all.css.map */
