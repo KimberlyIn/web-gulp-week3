@@ -6,7 +6,7 @@ header {
     background-color: $colorA;
     @include iphone {
       position: relative;
-      height: 65px;
+      height: auto;
       padding: 0;
     }
     .logo {
