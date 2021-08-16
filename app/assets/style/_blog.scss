@@ -1,0 +1,78 @@
+.blog-top {
+  background-color: $colorB;
+  line-height: 3;
+  .nav {
+    ul {
+      width: 100%;
+    }
+    li {
+      float: left;
+      padding-right: 25px;
+      @include iphone {
+        padding: 0 11px;
+      }
+    }
+    a {
+      font-weight: 700;
+      color: $colorC;
+      transition: 0.2s linear all;
+      &:hover {
+        color: rgb(219, 219, 219);
+      }
+    }
+    .search {
+      float: right; 
+      padding: 0;
+      @include iphone {
+        display: none;
+      }
+      i {
+        vertical-align: middle;
+        color: white;
+      }
+    }
+  }
+}
+
+.blog-main {
+  .col-6 {
+    float: left;
+    padding: 22px;
+    @include pad {
+      padding: 20px 10px;
+    }
+    @include iphone {
+      width: 100%;
+    }
+    h4 {
+      font-weight: 700;
+      color: $colorB;
+    }
+    .subslogan {
+      float: left;
+      font-weight: 700;
+    }
+    .date {
+      text-align: right;
+    }
+    .text {
+      height: 250px;
+      padding-top: 20px;
+      @include pad {
+        height: auto;
+      }
+    }
+    a {
+      text-align: right;
+      font-size: 30px;
+      font-weight: bold;
+      color: $colorB;
+      @include pad {
+        font-size: 15px;
+      }
+    }
+    p {
+      color: black;
+    }
+  }
+}

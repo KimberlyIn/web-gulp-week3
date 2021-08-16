@@ -1,0 +1,150 @@
+.blog-in-main {
+  .col-8 {
+    padding-right: 20px;
+    padding-bottom: 150px;
+    float: left;
+    @include iphone {
+      width: 100%;
+      padding-right: 0; 
+      padding-bottom: 20px;
+    }
+    .list {
+      padding: 10px 0;
+      li {
+        float: left;
+      }
+      a {
+        font-size: 10px;
+        color: black;
+        &:active { 
+          color: $colorA; 
+        }
+        &:focus {
+          color: $colorA; 
+        }
+      }
+      .slash {
+        &:after {
+          content: "/";
+          padding: 0 5px;
+          color: black;
+        }
+      }
+    }
+    h2 {
+      text-align: left;
+      padding: 5px 0;
+      color: black;
+    }
+    h5 {
+      float: left;
+      padding: 5px 0;
+      font-weight: 700;
+    }
+    .time {
+      text-align: right;
+      color: black;
+    }
+    .article {
+      padding: 20px 0;
+    }
+    .soshow-media {
+      a { 
+        display: inline-block;
+        font-weight: 700;
+        color: black;  
+      }
+      i {
+        vertical-align: middle;
+        color: black; 
+      }
+    }
+    .turn-page {
+      padding: 5px 0;
+      li {
+        position: relative;
+        float: left;
+      }
+      .previous {
+        @include iphone {
+          float: none;
+        }
+        p {
+          padding-left: 30px;
+        }
+      }
+      .next {
+        float: right;
+        @include iphone {
+          float: none;
+        }
+        i{
+          top: 0;
+          right: 0;
+          @include iphone {
+            left: 0;
+          }
+        }
+        p {
+          padding-right: 30px;
+          @include iphone {
+            padding-left: 30px;
+          }
+        }
+      }
+      a {
+        font-weight: 700;
+        color: black;
+      }
+      i {
+        position: absolute;
+        color: black;
+      }
+      p {
+        color: black;
+      }
+    }
+  }
+  .col-3 {
+    float: left;
+    padding-left: 20px;
+    padding-top: 50px;
+    @include iphone {
+      float: none;
+      width: 100%;
+      padding-bottom: 30px;
+      padding-left: 0;
+    }
+    h2 {
+      text-align: left;
+      font-size: 30px;
+      color: $colorA;
+      @include iphone {
+        font-size: 25px;
+        padding-bottom: 10px;
+      }
+      i {
+        vertical-align: bottom;
+        font-size: 40px;
+        color: $colorA;
+        @include iphone {
+          font-size: 30px;
+        }
+      }
+      a {
+        @include iphone {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .tab {
+    a {
+      display: inline-block;
+      padding-right: 5px;
+      font-size:20px;
+      font-weight: bold;
+      color: $colorA;
+    }
+  }
+}

@@ -1,0 +1,79 @@
+.store-base {
+  .container {
+    padding: 50px 0;
+    h1 {
+      border-left: 6px solid #AA0601;
+      padding-left: 10px;
+      @include pad {
+        margin: 0 10px;
+      }
+      @include iphone {
+        margin: 0 10px;
+      } 
+    }
+    .place {
+      li {
+        float: left;
+        margin: 20px 10px;
+        border: 1px solid #d3d3d3;
+        h5 {
+          padding: 10px 10px;
+          font-size: 18px;
+          font-weight: 600;
+          border-bottom: 1px solid #d3d3d3;
+        }
+        .detail {
+          position: relative;
+          padding: 10px 10px;
+          li {
+            float: none;
+            margin: 10px 0;
+            border: none;
+            i {
+              position: absolute;
+              color: $colorD;
+            }
+            a {
+              padding-left: 30px;
+              color: $colorD;
+            }
+            p {
+              padding-left: 30px;
+              color: $colorD;
+            }
+          }
+        }
+        .a-bottom {
+          text-align: center;
+          padding: 20px 0;
+          color: white; 
+          background-color: black;
+        }
+      }
+    }
+    form {
+      padding: 15px 0;
+      @include pad {
+        margin: 0 10px;
+      }
+      @include iphone {
+        margin: 0 10px;
+      } 
+      label {
+        margin-bottom: 0;
+        margin-right: 13px;
+        font-weight: 700;
+      }
+      .input-area {
+        width: 20%;
+        padding: 5px 5px;
+        @include pad {
+          width: 40%;
+        }
+        @include iphone {
+          width: 70%;
+        } 
+      }
+    }
+  }
+}
